@@ -1,0 +1,542 @@
+*
+{
+    box-sizing: border-box;
+    background-color: #FFF
+}
+body
+{
+    perspective: 1000px;
+}
+.container
+{
+    width: 1170px;
+    margin: auto;
+}
+/* Start cards */
+.cards
+{
+    background: linear-gradient(to top,#7ed56f, #55c57a,#28b485,transparent 65%), url(hero.jpg) no-repeat center; 
+    height: 800px;
+    margin:  auto;
+    clip-path: polygon(99% 0, 100% 84%, 0 100%, 0 13%);
+    opacity: 0.7;
+}
+.cards .fi
+{
+    width: 22%;
+    float: left;
+    overflow: hidden;
+    background-color: #e0dede;
+    height: 450px;
+    opacity: 0.8;
+    text-align: center;
+    margin: 200px 10px 0 10px;
+
+}
+.fi i
+{
+    margin-top: 20px;
+    background-color: #e0dede;
+    color: #55c57a;
+    font-size: 110px;
+}
+.fi h2
+{
+    background-color: #e0dede;
+    color: #877d7d
+}
+.fi p
+{
+    background-color: #e0dede;
+    color: #877d7d;
+    padding: 10px;
+    line-height: 1.5
+}
+.cards .se
+{
+    width: 22%;
+    float: left;
+    overflow: hidden;
+    background-color: #e0dede;
+    height: 450px;
+    margin: 200px 10px 0 10px;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.se i
+{
+    margin-top: 20px;
+    background-color: #e0dede;
+    color: #55c57a;
+    font-size: 110px;
+}
+.se h2
+{
+    background-color: #e0dede;
+    color: #877d7d
+}
+.se p
+{
+    background-color: #e0dede;
+    color: #877d7d;
+    padding: 10px;
+    line-height: 1.5
+}
+.cards .th
+{
+    width: 22%;
+    float: left;
+    overflow: hidden;
+    background-color: #e0dede;
+    height: 450px;
+    margin: 200px 10px 0 10px;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.th i
+{
+    margin-top: 20px;
+    background-color: #e0dede;
+    color: #55c57a;
+    font-size: 110px;
+}
+.th h2
+{
+    background-color: #e0dede;
+    color: #877d7d
+}
+.th p
+{
+    background-color: #e0dede;
+    color: #877d7d;
+    padding: 10px;
+    line-height: 1.5
+}
+.cards .fo
+{
+    width: 22%;
+    float: left;
+    overflow: hidden;
+    background-color: #e0dede;
+    height: 450px;
+    margin: 200px 10px 0 10px;
+    opacity: 0.8;
+    text-align: center;
+
+}
+.fo i
+{
+    margin-top: 20px;
+    background-color: #e0dede;
+    color: #55c57a;
+    font-size: 110px;
+}
+.fo h2
+{
+    background-color: #e0dede;
+    color: #877d7d
+}
+.fo p
+{
+    background-color: #e0dede;
+    color: #877d7d;
+    padding: 10px;
+    line-height: 1.5
+}
+.cards div :hover
+{
+    transform: scale(1.09);
+    transition: all .5s ease-in-out
+}
+/* End cards */
+
+
+
+
+
+
+
+/* Start Flip */
+.flip
+{
+    margin: 50px ;
+}
+.flip > h1
+{
+    color: #55c57a;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+
+/* start one */ 
+.flip .one 
+{
+    width: 22%;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+    float: left;
+    margin: 0 0 5% 8%;
+}
+.flip .one:hover
+{
+    transform: rotateY(180deg);
+}
+.flip .one .front
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 2;
+    backface-visibility: hidden;
+    float: left;
+    display: inline
+}
+.flip .one .front header
+{ 
+    width : 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 55px;
+    background:linear-gradient(to bottom, rgba(21, 18, 100, 0.73), rgba(74, 69, 189, 0.73)), url('omar.jpg') no-repeat center;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    position: relative;
+    z-index: 1
+
+}
+
+.flip .one .front h1
+{
+    text-decoration: none;
+    background-color: #EEE;
+    top: 80px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    background-color: #1526a4;
+    opacity: 0.8;
+    color: #FFF;
+    text-transform: uppercase
+    
+}
+.flip .one .front h3
+{
+    background-color: #EEE;
+    color: cadetblue;
+    margin-bottom: 20px
+}
+.flip .one .back
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #1526a4;
+}
+.flip .one .back h3
+{
+    background-color: #1526a4;
+    margin-top: 100px;
+    color: #fff;
+    
+    
+}
+.flip .one .back h1
+{
+    background-color: #1526a4;
+    font-size: 50px;
+    color: #FFF;
+}
+.flip .one .back button 
+{
+    background: none;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 36px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out
+}
+.flip .one .back button:hover
+{
+    background-color: #fff;
+    color: #1526a4;
+}
+/* End one */
+
+
+
+/* start two */ 
+.flip .two 
+{
+    width: 22%;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+    float: left;
+    margin: 0 0 5% 8%;
+}
+.flip .two:hover
+{
+    transform: rotateY(180deg);
+}
+.flip .two .front
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 2;
+    backface-visibility: hidden;
+    float: left;
+    display: inline
+}
+.flip .two .front header
+{ 
+    width : 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 55px;
+    background:linear-gradient(to bottom, rgba(8, 154, 10, 0.73), rgba(8, 154, 10, 0.73)), url('omar.jpg') no-repeat center;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    position: relative;
+    z-index: 1
+
+}
+
+.flip .two .front h1
+{
+    text-decoration: none;
+    background-color: #EEE;
+    top: 80px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    background-color: #7ed56f;
+    opacity: 0.8;
+    color: #FFF;
+    text-transform: uppercase
+    
+}
+.flip .two .front h3
+{
+    background-color: #EEE;
+    color: cadetblue;
+    margin-bottom: 20px
+}
+.flip .two .back
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #7ed56f;
+}
+.flip .two .back h3
+{
+    background-color: #7ed56f;
+    margin-top: 100px;
+    color: #fff;
+    
+    
+}
+.flip .two .back h1
+{
+    background-color: #7ed56f;
+    font-size: 50px;
+    color: #FFF;
+}
+.flip .two .back button 
+{
+    background: none;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 36px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out
+}
+.flip .two .back button:hover
+{
+    background-color: #fff;
+    color: #7ed56f;
+}
+/* End two */
+
+
+
+
+/* start three */ 
+.flip .three 
+{
+    width: 22%;
+    height: 450px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease-in-out;
+    float: left;
+    margin: 0 0 5% 8%;
+}
+.flip .three:hover
+{
+    transform: rotateY(180deg);
+}
+.flip .three .front
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 2;
+    backface-visibility: hidden;
+    float: left;
+    display: inline
+}
+.flip .three .front header
+{ 
+    width : 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 55px;
+    background:linear-gradient(to bottom, rgba(228, 238, 124, 0.73), rgba(218, 238, 12, 0.73)), url('omar.jpg') no-repeat center;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+    position: relative;
+    z-index: 1
+
+}
+
+.flip .three .front h1
+{
+    text-decoration: none;
+    background-color: #EEE;
+    top: 80px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    background-color: #f6e50a;
+    opacity: 0.8;
+    color: #FFF;
+    text-transform: uppercase
+    
+}
+.flip .three .front h3
+{
+    background-color: #EEE;
+    color: cadetblue;
+    margin-bottom: 20px
+}
+.flip .three .back
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    font-family: 'muli', sans-serif;
+    text-align: center;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #f6e50a;
+}
+.flip .three .back h3
+{
+    background-color: #f6e50a;
+    margin-top: 100px;
+    color: #fff;
+    
+    
+}
+.flip .three .back h1
+{
+    background-color: #f6e50a;
+    font-size: 50px;
+    color: #FFF;
+}
+.flip .three .back button 
+{
+    background: none;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 36px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out
+}
+.flip .three .back button:hover
+{
+    background-color: #fff;
+    color: #f6e50a;
+}
+/* End three */
+
+
+/* End flip */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
